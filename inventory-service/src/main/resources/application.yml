@@ -3,5 +3,8 @@ spring:
     username: user
     password: user
     url: jdbc:mysql://localhost/inventory-service
+  jpa:
+    hibernate:
+      ddl-auto: none
 server:
   port: 8082

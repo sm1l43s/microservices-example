@@ -37,14 +37,14 @@ class ProductServiceApplicationTests {
 		dynamicPropertyRegistry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
 	}
 	@Test
-//	void shouldCreateProduct() throws Exception {
-//		ProductRequest productRequest = getProductRequest();
-//		String productResuestString = objectMapper.writeValueAsString(productRequest);
-//		mockMvc.perform(MockMvcRequestBuilders.post("/api/products")
-//				.contentType(MediaType.APPLICATION_JSON)
-//				.content(productResuestString))
-//				.andExpect(status().isCreated());
-//	}
+	void shouldCreateProduct() throws Exception {
+		ProductRequest productRequest = getProductRequest();
+		String productResuestString = objectMapper.writeValueAsString(productRequest);
+		mockMvc.perform(MockMvcRequestBuilders.post("/api/products")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(productResuestString))
+				.andExpect(status().isCreated());
+	}
 
 	private ProductRequest getProductRequest() {
 		return ProductRequest.builder()

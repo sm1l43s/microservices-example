@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    username: user
+    password: user
+    url: jdbc:mysql://localhost/inventory-service
+server:
+  port: 8082

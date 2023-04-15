@@ -1,4 +1,14 @@
 spring:
+  application:
+    name: product-service
   data:
     mongodb:
       uri: mongodb://localhost/product-service
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8716/eureka

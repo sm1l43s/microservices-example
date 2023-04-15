@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: order-service
   datasource:
     url: jdbc:mysql://localhost/order-service
     username: user
@@ -9,3 +11,8 @@ spring:
       ddl-auto: update
 server:
   port: 8081
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8716/eureka

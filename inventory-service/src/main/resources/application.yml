@@ -5,6 +5,6 @@ spring:
     url: jdbc:mysql://localhost/inventory-service
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
 server:
   port: 8082
